@@ -1,0 +1,20 @@
+<div ng-controller="GenericHackerRankController"
+     data-method='recent_challenges'>
+
+    <div ng-repeat="challenge in data.models">
+        <a href='{{baseUrl}}/challenges/{{challenge.slug}}' target='_blank'>
+            {{challenge.name}}
+        </a>
+    </div>
+
+    <span ng-show="!data.models.length && currentPage == 1">This user have not enrolled in a challenge.</span>
+    <span ng-show="!data.models.length && currentPage > 1">No more challenges.</span>
+
+   	<div>
+	    <span class="hackerRankWidgetButton hackerRankWidgetButtonPrev" title='Previous page'
+	          ng-click="previousPage()"></span>
+	    <span class="hackerRankWidgetButton hackerRankWidgetButtonNext" title='Next page'
+	          ng-click="nextPage()"></span>
+    </div>
+
+</div>

@@ -1,0 +1,20 @@
+<div ng-controller="GenericHackerRankController" data-method='badges' data-ignoreoffset='true'>
+
+    <div ng-repeat="badge in data.models">
+
+        <img ng-src="{{baseUrl}}/{{badge.image_url}}" style='display:inline-block;max-width:40px;'
+             title='{{badge.name}} badge'/>
+
+        <div style='display:inline-block; vertical-align: top;'>
+            <span>{{badge.name}}</span>
+            <span style='color:#242424; display: inline-block;'>level {{badge.level}}</span>
+
+            <div class='progress' title='{{badge.percentile}}th percentile'
+                 style='background-color:#EDEDED; height: 10px; width: 100px; border-radius: 3px; border:1px solid rgb(228, 228, 228)'>
+                <div style='background-color: #9CC069; border-radius: 3px; height: 10px; width:{{badge.percentile}}%'></div>
+            </div>
+        </div>
+    </div>
+
+    <span ng-show="!data.models.length">This user doesn't have badges yet.</span>
+</div>
