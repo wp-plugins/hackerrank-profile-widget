@@ -42,17 +42,9 @@
     vertical-align:middle;
 }
 
-.hackerRankWidget header span:after {
-  content: ' |';
-}
-
 .hackerRankWidget header div {
     display:inline-block;
     vertical-align:middle;
-}
-
-.hackerRankWidget header div:before {
-  content: ' ';
 }
 
 .hackerRankWidget a {
