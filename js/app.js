@@ -6,7 +6,7 @@
         var widget = jQuery($element).parents('.hackerRankWidget'); // TODO .... remove... devia ser com vars angularjs
         var requests = widget.data('requestsurl');   // TODO .... remove... devia ser com vars angularjs
 
-        $scope.baseUrl = 'http://hackerrank.com';
+        $scope.baseUrl = 'https://hackerrank.com';
 
         if (!$attrs.ignoreoffset) {
             $scope.limit = 5;
