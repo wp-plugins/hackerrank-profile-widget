@@ -16,7 +16,7 @@
                 if ($option != 'profile' && $option != 'scores' && $option != 'badges') {
                     echo '<h2>' . ucfirst($option) . '</h2>';
                 }
-                echo '<div class="' . $option . ' hrPane">';
+                echo '<div class="hr' . ucfirst($option) . ' hrPane">';
                 require($option . '.html');
                 echo '</div>';
             }

@@ -1,19 +1,20 @@
-/* latin-ext */
 @font-face {
-  font-family: 'Merriweather Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url(../fonts/font1.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url(../fonts/font1.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
+
 @font-face {
-  font-family: 'Merriweather Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url(../fonts/font2.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url(../fonts/font2.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+/* HACKERRANK GENERAL */
 
 .hackerRankWidget {
     border-radius: 1px;
@@ -22,6 +23,13 @@
     box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
     color: rgb(57, 66, 78);
+}
+
+.hackerRankWidget h2 {
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #c2c7d0;
 }
 
 .hackerRankWidget header {
@@ -38,31 +46,21 @@
 }
 
 .hackerRankWidget header span {
-    display:inline-block;
-    vertical-align:middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .hackerRankWidget .separator {
     margin: 0 4px;
-
 }
 
 .hackerRankWidget a {
     color: rgb(70, 145, 246);
 }
 
-.hackerRankWidget h2 {
-    margin-top: 1em;
-    font-size: 1em;
-    font-weight: bold;
-    border-bottom: 1px solid #c2c7d0;
-}
-
 .hackerRankWidget .hrPane {
     margin-bottom: 8px;
     width: 100%;
-    background-color: #F8F9FA;
-    border-radius: 3px;
 }
 
 .hackerRankWidget .hrPane:last-child {
@@ -73,9 +71,77 @@
     max-width: 25px;
 }
 
-.hackerRankWidget .badges img {
-    max-width: 50px;
+/* PROFILE */
+
+.hackerRankWidget .hrAvatar {
+    border-radius: 4px;
 }
+
+.hackerRankWidget .hrProfile .hrLeft {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2.5%;
+}
+
+.hackerRankWidget .hrProfile .hrRight {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #F8F9FA;
+    padding: 6px;
+    box-sizing: border-box;
+    width: 67.5%;
+}
+
+.hackerRankWidget .hrUserRealName {
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.hackerRankWidget .hrUserNameLink {
+    font-size: 115%;
+    font-weight: bold;
+}
+
+/* BADGES */
+
+.hackerRankWidget .hrBadgeImage {
+    display: inline-block;
+    max-width: 40px;
+}
+
+.hackerRankWidget .hrBadgeContent {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hackerRankWidget .hrBadgeLevel {
+    color: #242424;
+    display: inline-block;
+}
+
+.hackerRankWidget .hrBadgeProgress {
+    background-color: #EDEDED;
+    height: 10px;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid rgb(228, 228, 228)
+}
+
+.hackerRankWidget .hrBadgeProgressBar {
+    background-color: #9CC069;
+    border-radius: 3px;
+    height: 10px;
+}
+
+/* CONTESTS */
+
+.hackerRankWidget .hrContests {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* BUTTONS */
 
 .hackerRankWidgetButton {
     cursor: pointer;
@@ -92,45 +158,4 @@
 .hackerRankWidgetButtonPrev {
     opacity: 0.4;
     background-image: url('left.png');
-}
-
-.hackerRankWidget .contests {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.hackerRankWidget .scores .hrMedal {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 16px;
-    font-size: 1.5em;
-}
-
-.hackerRankWidget .scores .hrMedal img {
-    width: 10px;
-    vertical-align: middle;
-}
-
-.hackerRankWidget .scores .hrMedal span {
-    margin-right: 4px;
-}
-
-.hackerRankWidget .hrAvatar {
-    border-radius: 4px;
-}
-
-.hackerRankWidget .profile .hrLeft {
-    display: inline-block;
-    width: 30%;
-    margin-right: 2.5%;
-}
-
-.hackerRankWidget .profile .hrRight {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #F8F9FA;
-    padding: 6px;
-    box-sizing: border-box;
-    width: 67.5%;
 }

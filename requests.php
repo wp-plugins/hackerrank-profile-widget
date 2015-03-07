@@ -1,8 +1,8 @@
 <?php
 
-require_once 'functions.php';
+require_once 'requests.functions.php';
 
-$url = hackerrank_getUrlVariables();
+$url = hackerRankGetUrlVariables();
 
 if (count($url) < 1) {
     exit('Few arguments.');
@@ -15,4 +15,4 @@ $queryString = isset($_GET) ? http_build_query($_GET) : null;
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
-echo hackerrank_getHackerRankContent($user, $method, $queryString);
+echo hackerRankGetHackerRankContent($user, $method, $queryString);

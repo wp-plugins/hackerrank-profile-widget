@@ -36,31 +36,31 @@
             $http.get(requests + $attrs.method, {params: qsParams}).success(handleResponse);
         });
 
-		$scope.previousPageExists = function () {
+        $scope.previousPageExists = function () {
             if ($scope.currentPage < 1) {
                 $scope.button_state = "disabled";
             }
-			return $scope.currentPage > 1;
-		};
+            return $scope.currentPage > 1;
+        };
 
-		$scope.nextPageExists = function () {
-			return $scope.data.models.length == $scope.limit &&
-			       $scope.currentPage >= 1;
-		};
+        $scope.nextPageExists = function () {
+            return $scope.data.models.length == $scope.limit &&
+                $scope.currentPage >= 1;
+        };
 
-		$scope.previousPage = function() {
-			if ($scope.previousPageExists()) {
-				$scope.offset -= $scope.limit;
-				$scope.currentPage--;
-			}
-		};
+        $scope.previousPage = function () {
+            if ($scope.previousPageExists()) {
+                $scope.offset -= $scope.limit;
+                $scope.currentPage--;
+            }
+        };
 
-		$scope.nextPage = function() {
-			if ($scope.nextPageExists()) {
-				$scope.offset += $scope.limit;
-				$scope.currentPage++;
-			}
-		};
-	});
+        $scope.nextPage = function () {
+            if ($scope.nextPageExists()) {
+                $scope.offset += $scope.limit;
+                $scope.currentPage++;
+            }
+        };
+    });
 
 })(window.angular);
