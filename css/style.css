@@ -42,9 +42,9 @@
     vertical-align:middle;
 }
 
-.hackerRankWidget header div {
-    display:inline-block;
-    vertical-align:middle;
+.hackerRankWidget .separator {
+    margin: 0 4px;
+
 }
 
 .hackerRankWidget a {

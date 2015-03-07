@@ -7,8 +7,7 @@
 
         <header>
             <img src="http://hackerrank.com/assets/brand/h_mark_sm.png"/>
-            <span><?php echo $instance['user'] ?></span>
-            <div> | HackerRank</div>
+            <span><?php echo $instance['user'] ?></span><span class="separator">|</span><span>HackerRank</span>
         </header>
 
         <?php
