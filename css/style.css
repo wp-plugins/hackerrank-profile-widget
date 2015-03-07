@@ -43,7 +43,7 @@
 }
 
 .hackerRankWidget header span:after {
-  content: ' |';
+  content: ' |';
 }
 
 .hackerRankWidget header div {
@@ -52,7 +52,7 @@
 }
 
 .hackerRankWidget header div:before {
-  content: ' ';
+  content: ' ';
 }
 
 .hackerRankWidget a {
