@@ -32,6 +32,5 @@ function htmlCompress($buffer)
     );
 
     $buffer = preg_replace($search, $replace, $buffer);
-
     return $buffer;
 }

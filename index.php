@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Plugin Name: HackerRank Profile Widget
  * Description: This is a plugin that shows your HackerRank profile with a simple widget.
