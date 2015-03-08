@@ -1,8 +1,17 @@
 (function (angular) {
 
+    angular.element(document).ready(function () {
+        var widgets = document.getElementsByClassName("hackerRankWidget");
+
+        for (var i = widgets.length - 1; i >= 0; i--) {
+            angular.bootstrap(widgets[i], ["hackerRankWidgetApp"]);
+        }
+    });
+
     var app = angular.module('hackerRankWidgetApp', []);
 
     app.controller("GenericHackerRankController", function ($scope, $http, $attrs, $element, $log) {
+
         var widget = jQuery($element).parents('.hackerRankWidget'); // TODO .... remove... devia ser com vars angularjs
         var requests = widget.data('requestsurl');   // TODO .... remove... devia ser com vars angularjs
 
@@ -29,6 +38,15 @@
                     }
                 });
             }
+
+            if (!$attrs.ignoreoffset) {
+                $scope.setButtonsState = function () {
+                    $scope.thereIsPrevious = $scope.previousPageExists();
+                    $scope.thereIsNext = $scope.nextPageExists();
+                };
+
+                $scope.setButtonsState();
+            }
         }
 
         $scope.$watch('offset', function () {
@@ -36,31 +54,31 @@
             $http.get(requests + $attrs.method, {params: qsParams}).success(handleResponse);
         });
 
-        $scope.previousPageExists = function () {
-            if ($scope.currentPage < 1) {
-                $scope.button_state = "disabled";
-            }
-            return $scope.currentPage > 1;
-        };
+        if (!$attrs.ignoreoffset) {
 
-        $scope.nextPageExists = function () {
-            return $scope.data.models.length == $scope.limit &&
-                $scope.currentPage >= 1;
-        };
+            $scope.previousPageExists = function () {
+                return $scope.currentPage > 1;
+            };
 
-        $scope.previousPage = function () {
-            if ($scope.previousPageExists()) {
-                $scope.offset -= $scope.limit;
-                $scope.currentPage--;
-            }
-        };
+            $scope.nextPageExists = function () {
+                return $scope.data.models.length == $scope.limit &&
+                    $scope.currentPage >= 1;
+            };
 
-        $scope.nextPage = function () {
-            if ($scope.nextPageExists()) {
-                $scope.offset += $scope.limit;
-                $scope.currentPage++;
-            }
-        };
+            $scope.previousPage = function () {
+                if ($scope.previousPageExists()) {
+                    $scope.offset -= $scope.limit;
+                    $scope.currentPage--;
+                }
+            };
+
+            $scope.nextPage = function () {
+                if ($scope.nextPageExists()) {
+                    $scope.offset += $scope.limit;
+                    $scope.currentPage++;
+                }
+            };
+        }
     });
 
 })(window.angular);

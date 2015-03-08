@@ -11,9 +11,9 @@
 
     <div>
 	    <span class="hackerRankWidgetButton hackerRankWidgetButtonPrev" title='Previous page'
-              ng-click="previousPage()"></span>
+              ng-click="previousPage()" ng-class="{hackerRankButtonDisabled: !thereIsPrevious}"></span>
 	    <span class="hackerRankWidgetButton hackerRankWidgetButtonNext" title='Next page'
-              ng-click="nextPage()"></span>
+              ng-click="nextPage()" ng-class="{hackerRankButtonDisabled: !thereIsNext}"></span>
     </div>
 
 </div>

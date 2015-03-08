@@ -159,3 +159,7 @@
     opacity: 0.4;
     background-image: url('left.png');
 }
+
+.hackerRankButtonDisabled {
+    opacity: 0.2;
+}

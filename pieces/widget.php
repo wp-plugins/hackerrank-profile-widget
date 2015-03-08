@@ -1,8 +1,7 @@
 <aside class="widget">
 
     <div class="hackerRankWidget"
-         id='widget<?php echo $this->id; ?>'
-         ng-app='hackerRankWidgetApp'
+         id='<?php echo $this->id; ?>'
          data-requestsurl="<?php echo $requestsUrl, '/', $username, '/' ?>">
 
         <header>
