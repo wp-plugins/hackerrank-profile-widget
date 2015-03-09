@@ -2,7 +2,7 @@
 /**
  * Plugin Name: HackerRank Profile Widget
  * Description: This is a plugin that shows your HackerRank profile with a simple widget.
- * Version: 0.9.6
+ * Version: 0.9.7
  * Author: Henrique Dias, Luís Soares
  * Author URI: http://henriquedias.com, http://luissoares.com
  * Network: true

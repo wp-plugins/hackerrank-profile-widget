@@ -1,4 +1,11 @@
 <?php
+/**
+ * Requests Handler
+ *
+ * @package HackerRank Profile Widget
+ * @author Henrique Dias <hacdias@gmail.com>, Luís Soares <lsoares@gmail.com>
+ * @version 1.0.0
+ */
 
 require_once 'requests.functions.php';
 
