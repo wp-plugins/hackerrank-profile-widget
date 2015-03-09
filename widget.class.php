@@ -24,7 +24,7 @@ class HackerRankProfile extends WP_Widget
             'username'
         ),
         "checkboxes" => array(
-            'Hide_Built_In_Header',
+            'Hide_built-in_header',
         ),
         "showOptions" => array(
             "profile",

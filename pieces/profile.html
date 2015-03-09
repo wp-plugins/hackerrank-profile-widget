@@ -1,8 +1,10 @@
 <div ng-controller="GenericHackerRankController" data-method='' data-ignoreoffset='true'>
 
-    <a href='{{baseUrl}}/{{data.model.username}}' target='_blank' title='Check profile' class='hrLeft'>
-        <img ng-src='{{data.model.avatar}}' class='hrAvatar'/>
-    </a>
+    <div class='hrLeft'>
+        <a href='{{baseUrl}}/{{data.model.username}}' target='_blank' title='Check profile'>
+            <img ng-src='{{data.model.avatar}}' class='hrAvatar'/>
+        </a>
+    </div>
 
     <div class='hrRight'>
         <div class="hrUserRealName">{{data.model.name}}</div>
