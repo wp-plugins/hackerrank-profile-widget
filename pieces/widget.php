@@ -7,7 +7,7 @@
          id='<?php echo $this->id; ?>'
          data-requestsurl="<?php echo $requestsUrl, '/', (isset($instance['username']) ? $instance['username'] : ''), '/' ?>">
 
-        <?php if (!isset($instance['Hide_Built_In_Header']) || !$instance['Hide_Built_In_Header'] == 'on') : ?>
+        <?php if (!isset($instance['Hide_built-in_header']) || !$instance['Hide_built-in_header'] == 'on') : ?>
             <header>
                 <img src="http://hackerrank.com/assets/brand/h_mark_sm.png"/>
             <span>

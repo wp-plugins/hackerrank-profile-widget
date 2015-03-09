@@ -11,7 +11,7 @@
         <?php if ($option == 'username'): ?>
             <?php if (!empty($option)) : ?>
                 <a href="https://hackerrank.com/<?php echo esc_attr($option); ?>" target='_blank' title='Test link'>
-                    <img src='https://cdn0.iconfinder.com/data/icons/feather/96/591256-link-16.png'></a>
+                    <img src='<?php echo HACKERRANK_PLUGIN_URL . 'css/link.png' ?>'></a>
             <?php endif; ?>
         <?php endif; ?>
 
