@@ -19,20 +19,14 @@ class HackerRankProfile extends WP_Widget
      * @var $options array
      */
     protected $options = array(
-        "text" => array(
-            'title',
-            'username'
-        ),
-        "checkboxes" => array(
-            'Hide_built-in_header',
-        ),
-        "showOptions" => array(
-            "profile",
-            "badges",
-            "contests",
-            "challenges",
-            "discussions"
-        )
+        "title",
+        "username",
+        "hideBuiltInHeader",
+        "showProfile",
+        "showBadges",
+        "showContests",
+        "showChallenges",
+        "showDiscussions"
     );
 
     public function __construct()
@@ -43,16 +37,11 @@ class HackerRankProfile extends WP_Widget
         );
     }
 
-    public function form($instance)
+    public function form($config)
     {
-        foreach ($this->options['text'] as $option) {
-            ${$option} = isset($instance[$option]) ? $instance[$option] : null;
-        }
-        foreach ($this->options['checkboxes'] as $option) {
-            ${$option} = $instance[$option];
-        }
-        foreach ($this->options['showOptions'] as $option) {
-            ${'show' . $option} = $instance['show' . $option];
+        $config = !empty($config) ? unserialize($config) : array();
+        foreach ($this->options as $option) {
+            ${$option} = isset($config[$option]) ? $config[$option] : null;
         }
         ob_start("htmlCompress");
         require 'pieces/form.php';
@@ -61,23 +50,14 @@ class HackerRankProfile extends WP_Widget
 
     public function update($newInstance, $oldInstance)
     {
-        $instance = array();
-        foreach ($this->options['text'] as $option) {
-            $instance[$option] = (!empty($newInstance[$option])) ? strip_tags($newInstance[$option]) : '';
-        }
-        foreach ($this->options['checkboxes'] as $option) {
-            $instance[$option] = $newInstance[$option];
-        }
-        foreach ($this->options['showOptions'] as $option) {
-            $instance['show' . $option] = $newInstance['show' . $option];
-        }
+        $instance = serialize($newInstance);
         return $instance;
     }
 
-    public function widget($args, $instance)
+    public function widget($args, $config)
     {
         extract($args, EXTR_SKIP);
-        $requestsUrl = HACKERRANK_PLUGIN_URL . 'requests.php';
+        $config = !empty($config) ? unserialize($config) : array();
 
         ob_start("htmlCompress");
         require 'pieces/widget.php';

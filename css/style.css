@@ -1,16 +1,32 @@
 @font-face {
-    font-family: 'Merriweather Sans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url(../fonts/font1.woff2) format('woff2');
+    src: local('Open Sans'), local('OpenSans'), url('OpenSans.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(OpenSans2.woff2) format('woff2');
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-    font-family: 'Merriweather Sans';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url(../fonts/font2.woff2) format('woff2');
+    src: local('Roboto'), local('Roboto-Regular'), url(Roboto.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(Roboto2.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -18,11 +34,10 @@
 
 .hackerRankWidget {
     border-radius: 1px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.38);
-    padding: 2.5%;
     box-sizing: border-box;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(57, 66, 78);
+    background: #f5f5f5;
 }
 
 .hackerRankWidget h2 {
@@ -34,8 +49,13 @@
 
 .hackerRankWidget header {
     font-weight: bold;
-    color: #000;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
     margin-bottom: 8px;
+    background: #39424e;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .hackerRankWidget header img {
@@ -71,6 +91,10 @@
     max-width: 25px;
 }
 
+.hackerRankWidgetContent {
+    padding: 5px;
+}
+
 /* PROFILE */
 
 .hackerRankWidget .hrAvatar {
@@ -86,8 +110,8 @@
 .hackerRankWidget .hrProfile .hrRight {
     display: inline-block;
     vertical-align: top;
-    background-color: #F8F9FA;
-    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 5px;
     box-sizing: border-box;
     width: 67.5%;
 }

@@ -8,6 +8,7 @@
  */
 
 define('HACKERRANK_PLUGIN_URL', plugins_url() . '/hackerrank-profile-widget/');
+define('HACKERRANK_REQUESTS', HACKERRANK_PLUGIN_URL . 'requests.php');
 
 function hackerRankAddJavaScriptAndCss()
 {
