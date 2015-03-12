@@ -1,4 +1,20 @@
 <p>
+    <label for="<?php echo $this->get_field_id('username'); ?>">
+        <input class="widefat"
+               id="<?php echo $this->get_field_id('username'); ?>"
+               name="<?php echo $this->get_field_name('username'); ?>"
+               type="text"
+               placeholder="Your HackerRank username"
+               style="width: 90%"
+               value="<?php echo esc_attr($username); ?>"/></label>
+
+    <?php if (!empty($username)) : ?>
+        <a href="https://hackerrank.com/<?php echo esc_attr($username); ?>" target='_blank' title='Test link'>
+            <img src='<?php echo HACKERRANK_PLUGIN_URL . 'css/link.png' ?>'></a>
+    <?php endif; ?>
+
+    <br><br>
+
     <label for="<?php echo $this->get_field_id('title'); ?>">
         <input class="widefat"
                id="<?php echo $this->get_field_id('title'); ?>"
@@ -18,22 +34,6 @@
 
     <br><br>
 
-    <label for="<?php echo $this->get_field_id('username'); ?>">
-        <input class="widefat"
-               id="<?php echo $this->get_field_id('username'); ?>"
-               name="<?php echo $this->get_field_name('username'); ?>"
-               type="text"
-               placeholder="Your HackerRank username"
-               style="width: 90%"
-               value="<?php echo esc_attr($username); ?>"/></label>
-
-    <?php if (!empty($username)) : ?>
-        <a href="https://hackerrank.com/<?php echo esc_attr($username); ?>" target='_blank' title='Test link'>
-            <img src='<?php echo HACKERRANK_PLUGIN_URL . 'css/link.png' ?>'></a>
-    <?php endif; ?>
-
-    <br><br>
-
     <?php foreach ($this->options as $option): ?>
         <?php if (substr($option, 0, 4) === "show"): ?>
             <input class="checkbox" type="checkbox" <?php checked(${$option}, 'on'); ?>
@@ -45,4 +45,15 @@
             <br>
         <?php endif; ?>
     <?php endforeach; ?>
+
+    <br>
+
+    Template:
+
+    <select id="<?php echo $this->get_field_id('theme'); ?>"
+            name="<?php echo $this->get_field_name('theme'); ?>">
+        <option value="light" <?php selected($theme, 'light'); ?>>Light</option>
+        <option value="dark" <?php selected($theme, 'dark'); ?>>Dark</option>
+        <option value="balanced" <?php selected($theme, 'balanced'); ?>>Balanced</option>
+    </select>
 </p>

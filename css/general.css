@@ -1,20 +1,4 @@
 @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url('OpenSans.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(OpenSans2.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -33,27 +17,27 @@
 /* HACKERRANK GENERAL */
 
 .hackerRankWidget {
-    border-radius: 5px;
-    border: 1px solid #39424e;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    color: rgb(57, 66, 78);
-    background: #f5f5f5;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+}
+
+.hackerRankWidget,
+.hackerRankWidget p,
+.hackerRankWidget a,
+.hackerRankWidget h1,
+.hackerRankWidget h2 {
+    font-family: "Roboto", sans-serif !important;
 }
 
 .hackerRankWidget h2 {
     margin-top: 1em;
     font-size: 1em;
     font-weight: bold;
-    border-bottom: 1px solid #c2c7d0;
 }
 
 .hackerRankWidget header {
     font-weight: bold;
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
     margin-bottom: 8px;
-    background: #39424e;
     padding: 5px;
 }
 
@@ -66,10 +50,6 @@
 
 .hackerRankWidget header * {
     vertical-align: middle;
-}
-
-.hackerRankWidget header a {
-    color : #DCECF7;
 }
 
 .hackerRankWidget header .hrHeaderUsername {
@@ -85,14 +65,6 @@
 
 .hackerRankWidget .separator {
     margin: 0 4px;
-}
-
-.hackerRankWidget .hrPane a {
-    color: #4691f6;
-}
-
-.hackerRankWidget a:hover {
-    color: #0076b9;
 }
 
 .hackerRankWidget .hrPane {
@@ -127,7 +99,6 @@
 .hackerRankWidget .hrProfile .hrRight {
     display: inline-block;
     vertical-align: top;
-    background-color: rgba(0, 0, 0, 0.03);
     padding: 5px;
     box-sizing: border-box;
     width: 67.5%;
@@ -141,7 +112,6 @@
 .hackerRankWidget .hrUserNameLink {
     font-size: 115%;
     font-weight: bold;
-    color: #4691f6 !important;
 }
 
 /* BADGES */
@@ -157,20 +127,17 @@
 }
 
 .hackerRankWidget .hrBadgeLevel {
-    color: #242424;
     display: inline-block;
 }
 
+a
 .hackerRankWidget .hrBadgeProgress {
-    background-color: #EDEDED;
     height: 10px;
     width: 100px;
     border-radius: 3px;
-    border: 1px solid rgb(228, 228, 228)
 }
 
 .hackerRankWidget .hrBadgeProgressBar {
-    background-color: #9CC069;
     border-radius: 3px;
     height: 10px;
 }

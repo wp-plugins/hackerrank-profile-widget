@@ -22,6 +22,7 @@ class HackerRankProfile extends WP_Widget
     protected $options = array(
         "title",
         "username",
+        "theme",
         "hideBuiltInHeader",
         "showProfile",
         "showBadges",
@@ -59,6 +60,20 @@ class HackerRankProfile extends WP_Widget
     {
         extract($args, EXTR_SKIP);
         $config = !empty($config) ? unserialize($config) : array();
+
+        $config['theme'] = isset($config['theme']) ? $config['theme'] : null;
+
+        switch ($config['theme']) {
+            case 'dark':
+                wp_enqueue_style('dark-style', HACKERRANK_PLUGIN_URL . 'css/dark.css');
+                break;
+            case 'balanced':
+                wp_enqueue_style('balanced-style', HACKERRANK_PLUGIN_URL . 'css/balanced.css');
+                break;
+            case 'light':
+            default:
+                wp_enqueue_style('light-style', HACKERRANK_PLUGIN_URL . 'css/light.css');
+        }
 
         ob_start("htmlCompress");
         require 'pieces/widget.php';

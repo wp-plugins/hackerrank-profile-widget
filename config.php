@@ -13,7 +13,7 @@ define('HACKERRANK_REQUESTS', HACKERRANK_PLUGIN_URL . 'requests.php');
 
 function hackerRankAddJavaScriptAndCss()
 {
-    wp_enqueue_style('main-style', HACKERRANK_PLUGIN_URL . 'css/style.css');
+    wp_enqueue_style('main-style', HACKERRANK_PLUGIN_URL . 'css/general.css');
 
     wp_register_script('angular-core', HACKERRANK_PLUGIN_URL . 'js/angular.min.js', array(), null, false);
     wp_register_script('my-angular-app', HACKERRANK_PLUGIN_URL . 'js/app.js', array('angular-core'), null, false);
