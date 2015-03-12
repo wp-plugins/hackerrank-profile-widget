@@ -3,7 +3,8 @@
  * Configuration file
  *
  * @package HackerRank Profile Widget
- * @author Henrique Dias <hacdias@gmail.com>, Luís Soares <lsoares@gmail.com>
+ * @author Henrique Dias <hacdias@gmail.com>
+ * @author Luís Soares <lsoares@gmail.com>
  * @version 1.0.0
  */
 
@@ -33,11 +34,7 @@ function htmlCompress($buffer)
         '/(\s)+/s'       // shorten multiple whitespace sequences
     );
 
-    $replace = array(
-        '>',
-        '<',
-        '\\1'
-    );
+    $replace = array('>', '<', '\\1');
 
     $buffer = preg_replace($search, $replace, $buffer);
     return $buffer;

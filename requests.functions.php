@@ -5,7 +5,8 @@
  * Functions related with the requests made to the HackerRanks server.
  *
  * @package HackerRank Profile Widget
- * @author Henrique Dias <hacdias@gmail.com>, Luís Soares <lsoares@gmail.com>
+ * @author Henrique Dias <hacdias@gmail.com>
+ * @author Luís Soares <lsoares@gmail.com>
  * @version 1.0.0
  */
 

@@ -74,8 +74,8 @@
     margin: 0 4px;
 }
 
-.hackerRankWidget a {
-    color: rgb(70, 145, 246);
+.hackerRankWidget .hrPane a {
+    color: #4691f6;
 }
 
 .hackerRankWidget .hrPane {
@@ -124,6 +124,7 @@
 .hackerRankWidget .hrUserNameLink {
     font-size: 115%;
     font-weight: bold;
+    color: #4691f6 !important;
 }
 
 /* BADGES */
