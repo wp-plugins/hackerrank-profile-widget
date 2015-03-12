@@ -11,8 +11,13 @@ Your HackerRank Profile, in your website.
 
 == Description ==
 
-If you're having troubles after updating the plugin, you should remove and re-add the widget.
+This is a simple plugin which gives you a widget to show your HackerRank profile in your page. It's very simple to use. You just have to put your HackerRank username and check the items you want to show.
 
-This plugin gives you a widget to show your HackerRank profile in your page. It's very simple to use. You just have to know your HackerRank username and check the items you want to show.
+**Features include: **
 
-This plugin was not created by HackerRank team developers.
+* A small version of your profile;
+* Show your badges;
+* Show the contests you are enrolled in;
+* Show the challenges you've completed;
+* Show the discussions you're enrolled;
+* A light, dark and balanced themes.
