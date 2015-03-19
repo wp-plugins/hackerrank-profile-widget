@@ -14,7 +14,7 @@
 
         <?php if (!isset($config['hideBuiltInHeader']) || !$config['hideBuiltInHeader'] == 'on') : ?>
             <header>
-                <img src="http://hackerrank.com/assets/brand/h_mark_sm.png"/>
+                <img src="http://www.hackerrank.com/assets/brand/h_mark_sm.png"/>
                 <a class='hrHeaderUsername' target='_blank'
                    href="https://www.hackerrank.com/<?php echo $config['username'] ?>">
                     <?php echo $config['username'] ?></a>
