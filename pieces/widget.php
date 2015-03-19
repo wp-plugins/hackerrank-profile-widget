@@ -16,7 +16,7 @@
             <header>
                 <img src="http://hackerrank.com/assets/brand/h_mark_sm.png"/>
                 <a class='hrHeaderUsername' target='_blank'
-                   href="https://hackerrank.com/<?php echo $config['username'] ?>">
+                   href="https://www.hackerrank.com/<?php echo $config['username'] ?>">
                     <?php echo $config['username'] ?></a>
                 <span class="separator"> |</span>
                 <span>HackerRank</span>

@@ -9,7 +9,7 @@
                value="<?php echo esc_attr($username); ?>"/></label>
 
     <?php if (!empty($username)) : ?>
-        <a href="https://hackerrank.com/<?php echo esc_attr($username); ?>" target='_blank' title='Test link'>
+        <a href="https://www.hackerrank.com/<?php echo esc_attr($username); ?>" target='_blank' title='Test link'>
             <img src='<?php echo HACKERRANK_PLUGIN_URL . 'css/link.png' ?>'></a>
     <?php endif; ?>
 
