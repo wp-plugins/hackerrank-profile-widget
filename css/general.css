@@ -1,8 +1,28 @@
+/*
+ * HackerRank Profile Widget for WordPress
+ *
+ *     Copyright (C) 2015 Henrique Dias <hacdias@gmail.com>
+ *     Copyright (C) 2015 Luís Soares <lsoares@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(Roboto.woff2) format('woff2');
+    src: local('Roboto'), local('Roboto-Regular'), url(../assets/Roboto.woff2) format('woff2');
     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -10,7 +30,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(Roboto2.woff2) format('woff2');
+    src: local('Roboto'), local('Roboto-Regular'), url(../assets/Roboto2.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -38,7 +58,7 @@
 .hackerRankWidget header {
     font-weight: bold;
     margin-bottom: 8px;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .hackerRankWidget header img {
@@ -55,7 +75,6 @@
 .hackerRankWidget header .hrHeaderUsername {
     cursor: pointer;
     font-weight: bold;
-    font-size: 110%;
 }
 
 .hackerRankWidget header span {
@@ -70,6 +89,7 @@
 .hackerRankWidget .hrPane {
     margin-bottom: 8px;
     width: 100%;
+    font-size: 1em;
 }
 
 .hackerRankWidget .hrPane:last-child {
@@ -104,13 +124,8 @@
     width: 67.5%;
 }
 
-.hackerRankWidget .hrUserRealName {
-    font-size: 115%;
-    font-weight: bold;
-}
-
+.hackerRankWidget .hrUserRealName,
 .hackerRankWidget .hrUserNameLink {
-    font-size: 115%;
     font-weight: bold;
 }
 
@@ -161,12 +176,12 @@ a
 
 .hackerRankWidgetButtonNext {
     opacity: 0.4;
-    background-image: url('right.png');
+    background-image: url('../assets/right.png');
 }
 
 .hackerRankWidgetButtonPrev {
     opacity: 0.4;
-    background-image: url('left.png');
+    background-image: url('../assets/left.png');
 }
 
 .hackerRankButtonDisabled {
