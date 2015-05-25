@@ -31,7 +31,7 @@
 
 	<?php if ( ! empty( $username ) ) : ?>
 		<a href="https://www.hackerrank.com/<?php echo esc_attr( $username ); ?>" target='_blank' title='Test link'>
-			<img src='<?php echo HACKERRANK_PLUGIN_URL . 'css/link.png' ?>'></a>
+			<img src='<?php echo plugins_url( 'css/link.png', dirname( __FILE__ ) ); ?>'></a>
 	<?php endif; ?>
 
 	<br><br>
