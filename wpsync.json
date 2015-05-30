@@ -1,0 +1,19 @@
+{
+  "increase": "build",
+  "main-file" : "plugin.php",
+  "ignore": [
+    ".git",
+    ".idea",
+    "nbproject",
+    "bower.json",
+    ".bowerrc",
+    ".gitignore",
+    ".editorconfig",
+    "wp-git-svn.json",
+    "wp-git-svn.py",
+    "README.md",
+    "test",
+    "tests"
+  ],
+  "svn": "https://plugins.svn.wordpress.org/hackerrank-profile-widget/trunk/"
+}
