@@ -1,4 +1,4 @@
-/*
+﻿/*
  * HackerRank Profile Widget for WordPress
  *
  *     Copyright (C) 2015 Henrique Dias <hacdias@gmail.com>
@@ -66,6 +66,5 @@
 }
 
 .hackerRankWidget .hrBadgeProgressBar {
-    background-color: #9CC069;
-!important
+    background-color: #9CC069 !important;
 }
