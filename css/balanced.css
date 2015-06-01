@@ -18,55 +18,55 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-.hackerRankWidget {
+.hackerrank-widget {
     border: 5px solid rgba(57, 66, 78, 1) !important;
     color: rgb(57, 66, 78) !important;
     background: #f5f5f5 !important;
 }
 
-.hackerRankWidget h2 {
+.hackerrank-widget h2 {
     border-bottom: 1px solid #c2c7d0 !important;
 }
 
-.hackerRankWidget header {
+.hackerrank-widget header {
     background: rgba(57, 66, 78, 1) !important;
 }
 
-.hackerRankWidget header,
-.hackerRankWidget header a {
+.hackerrank-widget header,
+.hackerrank-widget header a {
     color: #fff !important;
     font-family: sans-serif !important;
 }
 
-.hackerRankWidget .hrPane a {
+.hackerrank-widget .hrPane a {
     color: #4691f6 !important;
 }
 
-.hackerRankWidget a:hover {
+.hackerrank-widget a:hover {
     color: #0076b9 !important;
 }
 
 /* PROFILE */
 
-.hackerRankWidget .hrProfile .hrRight {
+.hackerrank-widget .hrProfile .hrRight {
     background-color: rgba(0, 0, 0, 0.03) !important;
 }
 
-.hackerRankWidget .hrUserNameLink {
+.hackerrank-widget .hrUserNameLink {
     color: #4691f6 !important;
 }
 
 /* BADGES */
 
-.hackerRankWidget .hrBadgeLevel {
+.hackerrank-widget .hrBadgeLevel {
     color: #242424 !important;
 }
 
-.hackerRankWidget .hrBadgeProgress {
+.hackerrank-widget .hrBadgeProgress {
     background-color: #EDEDED !important;
     border: 1px solid rgb(228, 228, 228) !important
 }
 
-.hackerRankWidget .hrBadgeProgressBar {
+.hackerrank-widget .hrBadgeProgressBar {
     background-color: #9CC069 !important;
 }

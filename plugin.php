@@ -3,7 +3,7 @@
 /**
  * Plugin Name: HackerRank Profile Widget
  * Description: This is a plugin that shows your HackerRank profile with a simple widget.
- * Version: 1.0.7
+ * Version: 1.1.0
  * Author: Henrique Dias and Luís Soares (Refactors)
  * Author URI: https://github.com/refactors
  * Network: true
@@ -59,7 +59,7 @@ class HackerRank_Profile extends WP_Widget {
 
 	public function __construct() {
 		parent::__construct(
-			'HackerrankWidget', 'HackerRank :: Profile',
+			'HackerrankWidget', 'HackerRank Profile',
 			array( 'description' => 'A widget to show a small version of your HackerRank profile.' )
 		);
 
@@ -107,6 +107,7 @@ class HackerRank_Profile extends WP_Widget {
 	}
 
 	public function register_widget_styles() {
+        wp_enqueue_style( $this->get_widget_slug() . '-widget-parent-styles', plugins_url( 'css/refactors-widget.css', __FILE__ ) );
 		wp_enqueue_style( $this->get_widget_slug() . '-widget-styles', plugins_url( 'css/general.css', __FILE__ ) );
 	}
 
@@ -115,9 +116,9 @@ class HackerRank_Profile extends WP_Widget {
 	}
 
 	public function register_widget_scripts() {
-		wp_register_script( $this->get_widget_slug() . 'angular-core', plugins_url( 'vendor/angular/angular.min.js', __FILE__ ), array(), null, false );
-		wp_register_script( $this->get_widget_slug() . 'my-angular-app', plugins_url( 'js/app.js', __FILE__ ), array( $this->get_widget_slug() . 'angular-core' ), null, false );
-		wp_enqueue_script( $this->get_widget_slug() . 'angular-core' );
+		wp_register_script( $this->get_widget_slug() . 'angular-core', plugins_url( 'vendor/angular/angular.min.js', __FILE__ ), array(), null, true );
+		wp_register_script( $this->get_widget_slug() . 'my-angular-app', plugins_url( 'js/app.js', __FILE__ ), array( $this->get_widget_slug() . 'angular-core' ), null, true );
+		wp_enqueue_script( $this->get_widget_slug() . 'angular-core');
 		wp_enqueue_script( $this->get_widget_slug() . 'my-angular-app' );
 	}
 }

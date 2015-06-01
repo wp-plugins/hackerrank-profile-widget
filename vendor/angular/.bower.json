@@ -4,11 +4,11 @@
   "ignore": [],
   "dependencies": {},
   "homepage": "https://github.com/angular/bower-angular",
-  "_release": "b7e1fe70bb",
+  "_release": "c7fa0f0809",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "b7e1fe70bb36aa552a9becb7d8ecedd4ce0282ac"
+    "commit": "c7fa0f0809a8a281f794a3ecb7197d7e00832733"
   },
   "_source": "git://github.com/angular/bower-angular.git",
   "_target": "master",

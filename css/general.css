@@ -18,86 +18,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(../assets/Roboto.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
 
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(../assets/Roboto2.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-/* HACKERRANK GENERAL */
-
-.hackerRankWidget {
-    border-radius: 5px !important;
-    box-sizing: border-box !important;
-}
-
-.hackerRankWidget,
-.hackerRankWidget p,
-.hackerRankWidget a,
-.hackerRankWidget h1,
-.hackerRankWidget h2 {
-    font-family: "Roboto", sans-serif !important;
-}
-
-.hackerRankWidget h2 {
-    margin-top: 1em;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.hackerRankWidget header {
-    font-weight: bold;
-    margin-bottom: 8px;
-    padding: 5px 0;
-}
-
-.hackerRankWidget header img {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 16px;
-    margin-right: 4px;
-}
-
-.hackerRankWidget header * {
-    vertical-align: middle;
-}
-
-.hackerRankWidget header .hrHeaderUsername {
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.hackerRankWidget header span {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.hackerRankWidget .separator {
-    margin: 0 4px;
-}
-
-.hackerRankWidget .hrPane {
+.hackerrank-widget .hrPane {
     margin-bottom: 8px;
     width: 100%;
     font-size: 1em;
 }
 
-.hackerRankWidget .hrPane:last-child {
+.hackerrank-widget .hrPane:last-child {
     margin-bottom: 0;
-}
-
-.hackerRankWidget header img {
-    max-width: 25px;
 }
 
 .hackerRankWidgetContent {
@@ -106,59 +35,41 @@
 
 /* PROFILE */
 
-.hackerRankWidget .hrAvatar {
-    border-radius: 4px;
-}
-
-.hackerRankWidget .hrProfile .hrLeft {
-    display: inline-block;
-    width: 28%;
-    margin-right: 2.5%;
-}
-
-.hackerRankWidget .hrProfile .hrRight {
-    display: inline-block;
-    vertical-align: top;
-    padding: 5px;
-    box-sizing: border-box;
-    width: 67.5%;
-}
-
-.hackerRankWidget .hrUserRealName,
-.hackerRankWidget .hrUserNameLink {
+.hackerrank-widget .hrUserRealName,
+.hackerrank-widget .hrUserNameLink {
     font-weight: bold;
 }
 
 /* BADGES */
 
-.hackerRankWidget .hrBadgeImage {
+.hackerrank-widget .hrBadgeImage {
     display: inline-block;
     max-width: 40px;
 }
 
-.hackerRankWidget .hrBadgeContent {
+.hackerrank-widget .hrBadgeContent {
     display: inline-block;
     vertical-align: top;
 }
 
-.hackerRankWidget .hrBadgeLevel {
+.hackerrank-widget .hrBadgeLevel {
     display: inline-block;
 }
 
-.hackerRankWidget .hrBadgeProgress {
+.hackerrank-widget .hrBadgeProgress {
     height: 10px;
     width: 100px;
     border-radius: 3px;
 }
 
-.hackerRankWidget .hrBadgeProgressBar {
+.hackerrank-widget .hrBadgeProgressBar {
     border-radius: 3px;
     height: 10px;
 }
 
 /* CONTESTS */
 
-.hackerRankWidget .hrContests {
+.hackerrank-widget .hrContests {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

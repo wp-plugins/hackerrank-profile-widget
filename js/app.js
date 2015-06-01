@@ -21,7 +21,7 @@
 (function (angular) {
 
     angular.element(document).ready(function () {
-        var widgets = document.getElementsByClassName("hackerRankWidget");
+        var widgets = document.getElementsByClassName("hackerrank-widget");
 
         for (var i = widgets.length - 1; i >= 0; i--) {
             angular.bootstrap(widgets[i], ["hackerRankWidgetApp"]);
@@ -32,7 +32,7 @@
 
     app.controller("GenericHackerRankController", function ($scope, $http, $attrs, $element, $log) {
 
-        var widget = jQuery($element).parents('.hackerRankWidget'); // TODO .... remove... devia ser com vars angularjs
+        var widget = jQuery($element).parents('.hackerrank-widget'); // TODO .... remove... devia ser com vars angularjs
         var requests = widget.data('requestsurl');   // TODO .... remove... devia ser com vars angularjs
 
         $scope.baseUrl = 'https://www.hackerrank.com';
