@@ -1,0 +1,19 @@
+<div ng-controller="GenericHackerRankController" data-method='recent_discussions'>
+
+    <span ng-show="!data.models.length && currentPage == 1">This user is not involved in a discussion yet.</span>
+    <span ng-show="!data.models.length && currentPage > 1">No more discussions.</span>
+
+    <div ng-repeat="discussion in data.models">
+        <a href='{{baseUrl}}/challenges/{{discussion.challenge_slug}}/forum/comments/{{discussion.id}}' target='_blank'>
+            {{discussion.challenge_name}} #{{discussion.id}}
+        </a>
+    </div>
+
+    <div>
+	    <span class="hackerRankWidgetButton hackerRankWidgetButtonPrev" title='Previous page'
+              ng-click="previousPage()" ng-class="{hackerRankButtonDisabled: !thereIsPrevious}"></span>
+	    <span class="hackerRankWidgetButton hackerRankWidgetButtonNext" title='Next page'
+              ng-click="nextPage()" ng-class="{hackerRankButtonDisabled: !thereIsNext}"></span>
+    </div>
+
+</div>
