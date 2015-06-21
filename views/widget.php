@@ -35,7 +35,7 @@
 
 		<?php if ( ! isset( $config['hideBuiltInHeader'] ) || ! $config['hideBuiltInHeader'] == 'on' ) : ?>
 			<header class="refactors-widget-header">
-				<img class="refactors-widget-company-logo" src="https://www.hackerrank.com/assets/brand/h_mark_sm.png"/>
+				<img class="refactors-widget-company-logo" src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/brand/h_mark_sm.png"/>
                 <div class="refactors-widget-header-text">
                     <a class='refactors-widget-header-link' target='_blank'
                        href="https://www.hackerrank.com/<?php echo $config['username'] ?>">
