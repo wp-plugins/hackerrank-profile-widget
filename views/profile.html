@@ -1,0 +1,17 @@
+<div class="refactors-widget-profile-info" ng-controller="GenericHackerRankController" data-method='' data-ignoreoffset='true'>
+
+    <a href='{{baseUrl}}/{{data.model.username}}' target='_blank' title='Check profile' class='refactors-widget-pi-left'>
+        <img ng-src='{{data.model.avatar}}' class='refactors-widget-avatar'/>
+    </a>
+
+    <div class='refactors-widget-pi-right refactors-shadowed'>
+        <div class="hrUserRealName">{{data.model.name}}</div>
+        <a href='{{baseUrl}}/{{data.model.username}}' target='_blank'
+           class="hrUserNameLink" title='Check profile'>
+            @{{data.model.username}}
+        </a>
+
+        <div title='Company'>{{data.model.company}}</div>
+        <div title='Language' style=''>{{data.model.language}}</div>
+    </div>
+</div>

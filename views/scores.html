@@ -1,0 +1,36 @@
+<!-- This is currently in development. -->
+
+<div ng-controller="GenericHackerRankController"
+     data-method='scores2'
+     data-ignoreoffset='true'>
+
+    <!-- TODO: usar Angular JS ciclo -->
+    <div>
+		<span class='hrMedal' title='{{data.medals.gold}} gold medals' ng-show="data.medals.gold">
+			<span>{{data.medals.gold}}</span><img ng-src='{{data.medalsUrl + "gold.svg"}}'/>
+		</span>
+		<span class='hrMedal' title='{{data.medals.silver}} silver medals' ng-show="data.medals.silver">
+			<span>{{data.medals.silver}}</span><img ng-src='{{data.medalsUrl + "silver.svg"}}'/>
+		</span>
+		<span class='hrMedal' title='{{data.medals.bronze}} bronze medals' ng-show="data.medals.bronze">
+			<span>{{data.medals.bronze}}</span><img ng-src='{{data.medalsUrl + "bronze.svg"}}'/>
+		</span>
+    </div>
+</div>
+
+<style>
+    .hackerrank-widget .scores .hrMedal {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 16px;
+        font-size: 1.5em;
+    }
+
+    .hackerrank-widget .scores .hrMedal img {
+        width: 10px;
+        vertical-align: middle;
+    }
+
+    .hackerrank-widget .scores .hrMedal span {
+        margin-right: 4px;
+</style>
