@@ -18,19 +18,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 .hackerrank-widget .hrPane {
     margin-bottom: 8px;
-    width: 100%;
-    font-size: 1em;
 }
 
 .hackerrank-widget .hrPane:last-child {
     margin-bottom: 0;
-}
-
-.hackerRankWidgetContent {
-    padding: 5px;
 }
 
 /* PROFILE */
