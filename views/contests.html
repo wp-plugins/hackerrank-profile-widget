@@ -1,0 +1,19 @@
+<div ng-controller="GenericHackerRankController" data-method='contest_participation'>
+
+    <span ng-show="!data.models.length && currentPage == 1">This user have not enrolled in a contest.</span>
+    <span ng-show="!data.models.length && currentPage > 1">No more contests.</span>
+
+    <div ng-repeat="contest in data.models">
+        <a href='{{baseUrl}}/contests/{{contest.slug}}' target='_blank'>
+            {{contest.name}}
+        </a>
+        rank: {{contest.hacker_rank}}/{{contest.total_participants}}
+    </div>
+
+    <div>
+	    <span class="hackerRankWidgetButton hackerRankWidgetButtonPrev" title='Previous page'
+              ng-click="previousPage()" ng-class="{hackerRankButtonDisabled: !thereIsPrevious}"></span>
+	    <span class="hackerRankWidgetButton hackerRankWidgetButtonNext" title='Next page'
+              ng-click="nextPage()" ng-class="{hackerRankButtonDisabled: !thereIsNext}"></span>
+    </div>
+</div>
