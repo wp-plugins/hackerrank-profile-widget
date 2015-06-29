@@ -1,7 +1,14 @@
 {
-  "increase": "build",
-  "main-file" : "plugin.php",
-  "ignore": [
+	"increase": "build",
+	"plugin": {
+		"file": "plugin.php",
+		"svn": "https://plugins.svn.wordpress.org/hackerrank-profile-widget/"
+	},
+	"dependencies": {
+		"bower": true,
+		"composer": false
+	},
+	"ignore": [
     ".git",
     ".idea",
     "nbproject",
@@ -9,11 +16,9 @@
     ".bowerrc",
     ".gitignore",
     ".editorconfig",
-    "wp-git-svn.json",
-    "wp-git-svn.py",
+    ".wpsync",
     "README.md",
     "test",
     "tests"
-  ],
-  "svn": "https://plugins.svn.wordpress.org/hackerrank-profile-widget/trunk/"
+  ]
 }

@@ -71,6 +71,7 @@
 
         $scope.$watch('offset', function () {
             var qsParams = {offset: $scope.offset, limit: $scope.limit};
+            console.log(requests + $attrs.method, {params: qsParams});
             $http.get(requests + $attrs.method, {params: qsParams}).success(handleResponse);
         });
 

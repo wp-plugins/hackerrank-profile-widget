@@ -3,7 +3,7 @@
 /**
  * Plugin Name: HackerRank Profile Widget
  * Description: This is a plugin that shows your HackerRank profile with a simple widget.
- * Version: 1.1.9
+ * Version: 1.3.0
  * Author: Henrique Dias and Luís Soares (Refactors)
  * Author URI: https://github.com/refactors
  * Network: true
@@ -106,8 +106,7 @@ class HackerRank_Profile extends WP_Widget {
 		ob_end_flush();
 	}
 
-	public function register_widget_styles() {
-        wp_enqueue_style( $this->get_widget_slug() . '-widget-parent-styles', plugins_url( 'css/refactors-widget.css', __FILE__ ) );
+	public function register_widget_styles() {;
 		wp_enqueue_style( $this->get_widget_slug() . '-widget-styles', plugins_url( 'css/general.css', __FILE__ ) );
 	}
 
