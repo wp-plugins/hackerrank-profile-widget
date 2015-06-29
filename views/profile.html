@@ -1,0 +1,17 @@
+<div class="hackerrank-widget-profile-info" ng-controller="GenericHackerRankController" data-method='' data-ignoreoffset='true'>
+
+    <a href='{{baseUrl}}/{{data.model.username}}' target='_blank' title='Check profile' class='hackerrank-widget-pi-left'>
+        <img ng-src='{{data.model.avatar}}' class='hackerrank-widget-avatar'/>
+    </a>
+
+    <div class='hackerrank-widget-pi-right hackerrank-shadowed'>
+        <div class="hrUserRealName">{{data.model.name}}</div>
+        <a href='{{baseUrl}}/{{data.model.username}}' target='_blank'
+           class="hrUserNameLink" title='Check profile'>
+            @{{data.model.username}}
+        </a>
+
+        <div title='Company'>{{data.model.company}}</div>
+        <div title='Language' style=''>{{data.model.language}}</div>
+    </div>
+</div>

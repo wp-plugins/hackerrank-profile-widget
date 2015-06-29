@@ -1,0 +1,16 @@
+{
+  "name": "angular",
+  "main": "./angular.js",
+  "ignore": [],
+  "dependencies": {},
+  "homepage": "https://github.com/angular/bower-angular",
+  "_release": "5cce56b681",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5cce56b681881ea2397f0e85e138c67bdbbd6770"
+  },
+  "_source": "git://github.com/angular/bower-angular.git",
+  "_target": "master",
+  "_originalSource": "angular"
+}
